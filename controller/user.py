@@ -7,7 +7,7 @@ from core.security import verify_password, create_access_token
 
 router = APIRouter()
 
-@router.post("/users/", response_model=UserResponse)
+@router.post("/users/", tags=["User"], response_model=UserResponse)
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
     db_user = crud_user.get_user_by_name(db, user.name)
     if db_user:
@@ -15,7 +15,7 @@ def create_user(user: UserCreate, db: Session = Depends(get_db)):
     return crud_user.create_user(db=db, user=user)
 
 # Login endpoint to generate JWT
-@router.post("/login")
+@router.post("/login", tags=["User"])
 async def login(username: str = Form(...), password: str = Form(...), db: Session = Depends(get_db)):
     # Retrieve user from the database
     db_user = crud_user.get_user_by_name(db, username)
