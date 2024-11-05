@@ -1,4 +1,4 @@
-# Tech Challenge - Fase 1 - Machine Leanring Engineering
+# Tech Challenge - Fase 1 - Machine Learning Engineering
 
 ## Grupo
 
