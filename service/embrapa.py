@@ -82,7 +82,7 @@ def validate_url(url, max_retries=3, delay=2):
     attempt = 0
     while attempt < max_retries:
         try:
-            response = requests.get(url, timeout=5)  # Timeout to avoid indefinite waiting
+            response = requests.get(url, timeout=20)  # Timeout to avoid indefinite waiting
             if response.status_code == 200:
                 return BeautifulSoup(response.content, "html.parser")
             else:
