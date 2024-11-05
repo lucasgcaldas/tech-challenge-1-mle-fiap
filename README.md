@@ -16,7 +16,6 @@ O banco de dados escolhido para o projeto foi o SQLite devido sua flexibildiade 
 
 - ```$ python -m venv venv```
 - ```$ pip install -r requirements.txt```
-- Criar um arquivo chamado ```.env``` e adicionar: ```SECRET_KEY = "FIAP_GRUPO_56"```
 - ```$ uvicorn main:app --reload```
 - Para acessar a aplicação -> [http://localhost:8000/docs/](http://localhost:8000/docs/)
 
