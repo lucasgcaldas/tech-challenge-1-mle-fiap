@@ -6,7 +6,7 @@ import os
 from passlib.context import CryptContext
 
 # Load SECRET_KEY from environment variables
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY="FIAP_GRUPO_56"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 120  # Token expiration time (1 hour)
 
