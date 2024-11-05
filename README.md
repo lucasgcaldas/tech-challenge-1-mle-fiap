@@ -26,3 +26,8 @@ O funcionamento do sistema segue de acordo com o fluxo a seguir:
 ```Cadastro de Usuário -> Autenticação de Usuário -> Consulta nas rotas GET```
 
 Observação: Não é possível consultar a API sem antes estar logado!
+
+
+Arquitetura projeto:
+![Alt text](fiap_grupo_56.png)
+
